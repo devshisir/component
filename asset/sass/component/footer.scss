@@ -101,10 +101,12 @@
         }
     }
     .footerMiddleAreaMobile{
-        padding: 20px 0px;
+        padding: 10px 0px;
+        overflow-x: hidden;
         #accordion{
             .footerLinkItem{
-                margin-bottom: 10px;
+                border-bottom: 1px solid #ddd;
+                padding: 10px 15px 10px 20px;
                 .card-header{
                     background: transparent;
                     border: none;
@@ -113,33 +115,42 @@
                     position: relative;
                     &:after{
                         font-family: "Font Awesome 5 Pro";
-                        content: "\f068";
+                        content: "\f107";
                         color: #ff7855;
                         position: absolute;
                         top: 0;
                         right: 0;
                         font-size: 13px;
                         color: #00539F;
+                        height: 20px;
+                        width: 20px;
+                        background-color: #fff;
+                        text-align: center;
+                        line-height: 20px;
+                        border-radius: 50%;
                     }
                     a{
-                        font-family: tsr;
+                        font-family: tsbold;
                         text-decoration: none;
-                        color: #00539F;
+                        color: #232323;
                         display: block;
                         width: 100%;
-                        font-size: 16px;
+                        font-size: 14px;
                         margin-bottom: 5px;
+                    }
+                    a.copyrightTitle{
+                        font-family: tsr;
+                        font-size: 13px;
                     }
                 }
                 .card-header.collapsed{
                     &:after{
-                        content: "\f067";
+                        content: "\f106";
                     }
                 }
                 .card-body{
                     padding: 0px;
-                    padding-left: 30px;
-                    padding-right: 30px;
+                    padding-top: 5px;
                     ul{
                         li{
                             margin-bottom: 4px;
